@@ -1,0 +1,72 @@
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+article {
+    margin-top: 5rem;
+}
+
+article img {
+    float: left;
+}
+
+p {
+    word-break: break-all;
+}
+
+.img-right {
+    float: right;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    article {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    article img, .img-right {
+        float: none;
+    }
+
+
+    article p {
+        margin: 2rem;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    article img , .img-right {
+        width: 280px;
+        height: auto;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    article p {
+        margin: 2rem 0.3rem;
+    }
+  }
