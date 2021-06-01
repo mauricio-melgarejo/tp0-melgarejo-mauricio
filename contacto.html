@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Recetas Online</title>
 </head>
 <body>
@@ -47,8 +48,57 @@
 
     <!-- section -->
     <section>
-        <div class="container-fluid">
-            <img src="..." class="rounded float-start" alt="...">
+        <div class="container border rounded p-5 mt-5">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="validationDefault01" class="form-label">Nombre:</label>
+                  <input type="text" class="form-control" id="validationDefault01" placeholder="Ingrese" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationDefault02" class="form-label">Apellido:</label>
+                  <input type="text" class="form-control" id="validationDefault02" placeholder="Ingrese" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="validationDefault04" class="form-label">Provincia:</label>
+                    <select class="form-select" id="validationDefault04" required>
+                      <option selected disabled value="">Seleccionar...</option>
+                      <option>Misiones</option>
+                      <option>Buenos Aires</option>
+                      <option>Cordoba</option>
+                      <option>Entre Rios</option>
+                      <option>Chubut</option>
+                      <option>Etc..</option>
+                    </select>
+                  </div>
+
+                <div class="col-md-6">
+                  <label for="validationDefault03" class="form-label">Ciudad:</label>
+                  <input type="text" class="form-control" id="validationDefault03" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@gmail.com" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentario:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                      Aceptar los <a href="terminos-condiciones.html" target="_blank"><b>terminos y condiciones</b></a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-secondary" type="submit">Enviar comentario</button>
+                </div>
+              </form>
         </div>
     </section>
 
